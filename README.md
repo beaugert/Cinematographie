@@ -77,7 +77,7 @@ plt.ylabel("Studio")
 plt.show()
 
 <div style="text-align: center; margin-top: 20px;">
-    <img src="Images/Image.jpg" width="800" alt="Capture d'écran IMDB">
+    <img src="Images/Image3.jpg" width="800" alt="Capture d'écran IMDB">
     <p style="font-style: italic; color: #7f8c8d; margin-top: 10px;">
         Schéma de la base de données IMDB utilisée pour l'analyse.
     </p>
