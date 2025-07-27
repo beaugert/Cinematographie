@@ -69,13 +69,13 @@ Le fichier utilisé : bom.movie_gross.csv.gz
 
 Après avoir calculé les revenus moyens par studio, on utilise un diagramme en barres horizontales pour visualiser les 10 studios les plus rentables.
 
-python
+```python
 sns.barplot(x=studio_avg.values, y=studio_avg.index, color="skyblue")
 plt.title("Top 10 Studios par Revenu Moyen")
 plt.xlabel("Revenu Moyen ($)")
 plt.ylabel("Studio")
 plt.show()
-
+```
 <div style="text-align: center; margin-top: 20px;">
     <img src="Images/Image1.jpg" width="800" alt="Capture d'écran IMDB">
     <p style="font-style: italic; color: #7f8c8d; margin-top: 10px;">
@@ -88,14 +88,14 @@ plt.show()
 
 Cette partie du code permet de visualiser la distribution des recettes totales (total_gross) des films à l'aide d'un histogramme avec courbe de densité (PDF).
 
-python
+```python
 # Histogramme avec courbe de densité (PDF)
 sns.histplot(df_clean['total_gross'], kde=True, color="skyblue", bins=30)
 plt.title("Distribution des Revenus (PDF)")
 plt.xlabel("Revenu Total ($)")
 plt.ylabel("Nombre de films / Densité")
 plt.show()
-
+```
 <div style="text-align: center; margin-top: 20px;">
     <img src="Images/Image2.jpg" width="800" alt="Capture d'écran IMDB">
     <p style="font-style: italic; color: #7f8c8d; margin-top: 10px;">
@@ -107,11 +107,11 @@ plt.show()
 
 Cette visualisation permet d’observer la relation entre l’année de sortie d’un film (year) et ses recettes totales (total_gross) grâce à une régression linéaire.
 
-python
+```python
 sns.lmplot(data=df_clean, x='year', y='total_gross', height=6, aspect=1.5)
 plt.title("Régression Linéaire : Année vs Revenu Total")
 plt.show()
-
+```
 <div style="text-align: center; margin-top: 20px;">
     <img src="Images/Image3.jpg" width="800" alt="Capture d'écran IMDB">
     <p style="font-style: italic; color: #7f8c8d; margin-top: 10px;">
